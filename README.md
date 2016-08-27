@@ -12,7 +12,6 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
     - [frontmatter](#frontmatter)
     - [templates](#templates)
     - [markdown](#markdown)
-- [An h2 header](#an-h2-header)
     - [sass](#sass)
         - [tachyons](#tachyons)
             - [tricks](#tricks)
