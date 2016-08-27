@@ -4,6 +4,22 @@ You wanna make a website with more than one page.
 
 You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free.
 
+## Contents
+
+- [Github Pages](#github-pages)
+- [Jekyll](#jekyll)
+    - [collections](#collections)
+    - [frontmatter](#frontmatter)
+    - [templates](#templates)
+    - [markdown](#markdown)
+- [An h2 header](#an-h2-header)
+    - [sass](#sass)
+        - [tachyons](#tachyons)
+            - [tricks](#tricks)
+    - [data](#data)
+
+<!-- end toc 4 -->
+
 ## Github Pages
 
 Github has a free product called GitHub Pages. Here's what it does:
