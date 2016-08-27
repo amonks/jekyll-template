@@ -1,0 +1,11 @@
+<article>
+  <h2>{{ include.article.title }}</h2>
+  {% comment %}
+    there's documentation about date formatting here:
+    https://help.shopify.com/themes/liquid/filters/additional-filters#date
+  {% endcomment %}
+  <time datetime="{{ include.article.date | date: "%F" }}">{{ include.article.date | date: "%A, %B %-d, %Y"}}</time>
+  <div class="markdown">
+    {{ include.article.content }}
+  </div>
+</article>

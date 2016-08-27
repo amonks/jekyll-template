@@ -1,0 +1,10 @@
+<footer class="pt6 pb6 section">
+  <p class="f6 db b ttu lh-solid">© {{ page.date | date: "%Y" }} {{ site.data.meta.author }}</p>
+  <div class="mt5">
+    {% for page in site.pages %}
+      <a href="{{ page.url }}" title="{{ page.title }}" class="f6 dib pr2 dim" />
+        {{ page.title }}
+      </a>
+    {% endfor %}
+  </div>
+</footer>

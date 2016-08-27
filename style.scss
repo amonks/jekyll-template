@@ -1,0 +1,47 @@
+---
+---
+@import 'tachyons';
+@import 'clrs';
+
+// see the sass section of the README for info about how the css
+// is structured
+
+////////////////////////////////////
+// tachyons-style utility classes //
+////////////////////////////////////
+
+.section {
+  @extend .mw7, .center, .pv3;
+}
+
+// taking cues from http://tachyons.io/docs/layout/max-widths/
+// and also https://www.npmjs.com/package/css-min-height-scale
+//
+// two dashes to signify that this is a percent of the _window_
+// rather than of the _containing element_
+
+.mn-hi--60 { min-height: 60vh }
+
+/////////////////////////////////
+// rules for the whole website //
+/////////////////////////////////
+
+a {
+  @extend .dim;
+  color: inherit;
+}
+
+// markdown doesn't let us conveniently tag everything with a
+// class, so we'll make some general rules here and then wrap
+// any markdown output in our templates with a
+// <div class="markdown">
+
+.markdown {
+  p {
+    @extend .lh-copy, .measure;
+  }
+  ul {
+    @extend .list, .ph0;
+  }
+}
+

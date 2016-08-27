@@ -1,0 +1,11 @@
+{% case include.medium.type %}
+  {% when 'image' %}
+    <img class="mw-100" src="{{include.medium.src}}" />
+  {% when 'youtube' %}
+    {% include youtube.html youtube_id=include.medium.youtube_id %}
+  {% when 'vimeo' %}
+    {% include vimeo.html vimeo_id=include.medium.vimeo_id %}
+  {% else %}
+    I don't know how to deal with this type of media: {{ include.medium.type }}
+{% endcase %}
+
