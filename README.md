@@ -4,6 +4,8 @@ You wanna make a website with more than one page.
 
 You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free.
 
+You might use prose.io as a sort of cms.
+
 ## Contents
 
 - [Getting Started](#getting-started)
@@ -19,6 +21,7 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
     - [data](#data)
     - [javascript](#javascript)
         - [turbolinks](#turbolinks)
+- [prose.io](#prose-io)
 - [moving on from here](#moving-on-from-here)
     - [comments and dynamic content](#comments-and-dynamic-content)
     - [more media types](#more-media-types)
@@ -267,6 +270,22 @@ You'll notice an include called [`_includes/scripts.html`](https://github.com/am
 
 [**turbolinks documentation**](https://github.com/turbolinks/turbolinks)
 turbolinks.js is the only script I've included in the template. It makes links within your website feel like they load faster by downloading the page and replacing only the parts that changed rather than doing a full page load.
+
+## prose.io
+
+[**prose.io documentation**](https://github.com/prose/prose/wiki/Getting-Started)
+
+Prose.io is an editor for files in github.
+
+You can set it up using the [`_prose.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_prose.yml) file.
+
+This template's prose.yml is set up with custom metadata fields for pages in the media collection. Fork this repository, edit a media page in prose.io, and click the Metadata icon on the right (it's supposed to look like a table, I think) to see what's up 
+
+Here's a screenshot:
+
+![prose.io metadata editor](http://f.monks.co/prose-io-yqI/prose-io.png)
+
+I find it a lot easier to use than editing files in github, and it's extra helpful if you have multiple authors who don't want to have to know about code stuff.
 
 ## moving on from here
 
