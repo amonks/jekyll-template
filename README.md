@@ -1,6 +1,6 @@
 # JEKYLL TEMPLATE
 
-You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts. This article is not about learning specific html or css tags, but about structure and logistics for managing your html and css. If you need to brush up on your html and css, there are some great resources listed at the bottom of this page.
+You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts. This article is not about learning specific html or css tags, but about structure and logistics for managing your html and css, editing it, and getting it onto the internet. If you need to brush up on your html and css, there are some great resources listed at the bottom of this page.
 
 You should at least have vague familiarity with github. I hope to update this guide to cover the github stuff, but I haven't yet.
 
