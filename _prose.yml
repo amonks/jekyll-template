@@ -1,0 +1,37 @@
+prose:
+  siteurl: 'http://amonks.github.io/jekyll-template'
+  metadata:
+    _articles:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+    _media:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "type"
+        field:
+          element: "multiselect"
+          label: "type"
+          placeholder: "Media Type"
+          options:
+            - value: "youtube"
+              name: "youtube"
+            - value: "vimeo"
+              name: "vimeo"
+            - value: "image"
+              name: "image"
+      - name: "vimeo_id"
+        field:
+          element: "text"
+          label: "vimeo_id"
+      - name: "youtube_id"
+        field:
+          element: "text"
+          label: "youtube_id"
+      - name: "src"
+        field:
+          element: "text"
+          label: "src (for images)"
