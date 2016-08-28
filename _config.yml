@@ -41,13 +41,14 @@ markdown:    kramdown
 highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
-incremental: true # NOTE: not a default
+# NOTE: incremental builds sound cool but they don't work well yet
+incremental: false
 
 # Serving
 detach:  false
 port: 4000
 host: 127.0.0.1
-baseurl: "" # does not include hostname
+baseurl: "/jekyll-template" # NOTE: not a default
 show_dir_listing: false
 
 # Outputting
@@ -62,7 +63,7 @@ defaults: # NOTE: this whole section is not default
       path: "_articles"
     values:
       layout: "article"
-      permalink: "/:title"
+      permalink: "/articles/:title"
   - scope:
       path: "_pages"
     values:
@@ -72,7 +73,7 @@ defaults: # NOTE: this whole section is not default
       path: "_media"
     values:
       layout: "media"
-      permalink: "/m/:title"
+      permalink: "/media/:title"
 
 liquid:
   error_mode: warn

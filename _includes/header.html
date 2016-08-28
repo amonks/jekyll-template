@@ -1,12 +1,12 @@
 <header class="section pb6 pt4">
-  <a class="b f1 f-headline-ns mb3 mb4-ns" href="/" title="{{ site.data.meta.title }}">
+  <a class="b f1 f-headline-ns mb3 mb4-ns" href="{{ site.baseurl }}/" title="{{ site.data.meta.title }}">
     {{ site.data.meta.title }}
   </a>
   <div class="pb3">
     {% for page in site.pages %}
-      <a class="f6 f5-ns dib mr3" href="{{ page.url }}" title="{{ page.title }}">
-        {{ page.title }}
-      </a>
+      <span class="f6 f5-ns dib mr3">
+        {% include link.html to=page %}
+      </span>
     {% endfor %}
   </div>
 </header>

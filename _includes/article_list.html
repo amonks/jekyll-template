@@ -1,7 +1,7 @@
 <ul>
   {% for article in include.articles %}
     <li>
-      <a href="{{ article.url }}">{{ article.title }}</a>
+      {% include link.html to=article %}
     </li>
   {% endfor %}
 </ul>
