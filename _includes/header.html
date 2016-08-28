@@ -3,11 +3,7 @@
     {{ site.data.meta.title }}
   </a>
   <div class="pb3">
-    {% for page in site.pages %}
-      <span class="f6 f5-ns dib mr2 mr3-ns">
-        {% include link.html to=page %}
-      </span>
-    {% endfor %}
+    {% include inline_page_list.html %}
   </div>
 </header>
 

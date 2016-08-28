@@ -324,3 +324,104 @@ you can set a custom domain for a github-pages website. You'll have to change th
 
 There's documentation about the process on [github's documentation website](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
 
+# Appendix A: _What are all these files?_
+
+```
+├── Gemfile
+    the Gemfile is for if you want to run jekyll on your own computer.
+    It says "use all the same versions of things that github uses"
+├── README.md
+    You're reading the README right now
+├── _articles
+    these files are in the collection called articles, defined in
+    _config.yml. You can use `site.articles` to make a list of them.
+│   ├── 2016-08-22-article.md
+        in the built site, this article lives at /articles/article
+│   └── 2016-08-27-another-article.md
+        this one lives at /articles/another-article
+├── _config.yml
+    this file is for configuring jekyll
+├── _data
+    files in this folder are for data you want to reference in
+    your pages.
+│   └── meta.yml
+        this file contains metadata about the site, like its title
+        ("My Website") and the author name ("Andrew")
+├── _includes
+    these are reusable html components you can include in your
+    layouts and in other includes.
+│   ├── article.html
+        a single article, with its title, date, and text
+│   ├── article_list.html
+        a list of all pages in the article collection, by date
+│   ├── footer.html
+        the footer at the bottom of every page
+│   ├── head.html
+        the <head> tag on every page
+│   ├── header.html
+        the header at the top of every page
+│   ├── inline_pages_list.htlm
+        the one-line list of pages in the header and footer
+│   ├── link.html
+        a utility for making links to pages
+│   ├── media.html
+        a utility for including media of any type
+│   ├── media_list.html
+        a list of all pages in the media collection
+│   ├── media_thumbnail.html
+        a small thumbnail of a media page (used in the media_list)
+│   ├── scripts.html
+        javascript to include in every page
+│   ├── vimeo.html
+        a vimeo embed
+│   └── youtube.html
+        a youtube embed
+├── _layouts
+    a layout is the html around your page content
+│   ├── article.html
+        this layout is used for pages in the article collection
+│   ├── media.html
+        this layout is used for pages in the media collection
+│   └── page.html
+        this layout is used for pages in the pages collection
+        and also for the website's index page
+├── _media
+    this is the media collection. You probably won't have a
+    media collection, but I wanted an example of a collection
+    other than articles and pages.
+│   ├── 1.md
+        this media page has a vimeo embed
+│   ├── 2.md
+        this media page has an image
+│   ├── 3.md
+        this media page has a youtube embed
+│   ├── 4.md
+│   ├── 5.md
+│   ├── 6.md
+│   └── 7.md
+├── _pages
+    this is the pages collection. Pages in the pages collection
+    show up in the links in the header and footer.
+│   ├── about.md
+│   ├── articles.html
+        this page has a list of every page in the articles collection
+│   └── media.html
+        this page has a lits of every page in the media collection
+├── _prose.yml
+    this file is for configuring prose.io
+├── _sass
+    these are css files we're including
+│   ├── _clrs.scss
+        this file adds classes for colors and background colors
+│   └── _tachyons.scss
+        this file adds a ton of generic css classes
+├── _site
+    if you're running jekyll on your own computer, this
+    is where your website is built into
+├── index.md
+    this file turns into index.html: the website's front page
+└── style.scss
+    this file has css rules that apply to the whole website
+    it also includes the two css files in /_sass
+```
+

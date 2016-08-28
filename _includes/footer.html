@@ -1,10 +1,7 @@
 <footer class="mt3 mb5 section">
   <p class="f6 db b ttu lh-solid">© {{ page.date | date: "%Y" }} {{ site.data.meta.author }}</p>
   <div class="mt4">
-    {% for page in site.pages %}
-      <span class="f6 f5-ns dib mr2 mr3-ns">
-        {% include link.html to=page %}
-      </span>
-    {% endfor %}
+    {% include inline_page_list.html %}
   </div>
 </footer>
+
