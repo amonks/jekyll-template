@@ -15,9 +15,9 @@ You might use prose.io as a sort of cms.
 - [Jekyll](#jekyll)
     - [collections](#collections)
     - [frontmatter](#frontmatter)
-    - [templates](#templates)
+    - [templates (liquid)](#templates-liquid)
     - [markdown](#markdown)
-    - [sass](#sass)
+    - [css (sass)](#css-sass)
         - [tachyons](#tachyons)
             - [tricks](#tricks)
     - [data](#data)
@@ -27,6 +27,7 @@ You might use prose.io as a sort of cms.
 - [moving on from here](#moving-on-from-here)
     - [comments and dynamic content](#comments-and-dynamic-content)
     - [more media types](#more-media-types)
+    - [custom domain](#custom-domain)
 
 <!-- end toc 4 -->
 
