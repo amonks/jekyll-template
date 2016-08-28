@@ -1,6 +1,8 @@
 # JEKYLL TEMPLATE
 
-You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts. You should at least have vague familiarity with github. I hope to update this guide to cover the github stuff, but I haven't yet.
+You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts. This article is not about learning specific html or css tags, but about structure and logistics for managing your html and css. If you need to brush up on your html and css, there are some great resources listed at the bottom of this page.
+
+You should at least have vague familiarity with github. I hope to update this guide to cover the github stuff, but I haven't yet.
 
 You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free, and which automatically runs Jekyll every time you make a change.
 
@@ -426,3 +428,20 @@ There's documentation about the process on [github's documentation website](http
     it also includes the two css files in /_sass
 ```
 
+# Appendix B: _Hold up! You're moving too fast!_
+
+This template assumes you're already pretty familiar with html and css. If you aren't, here are some great resources:
+
+## John Ducket's book ["HTML&CSS"](http://www.htmlandcssbook.com/)
+
+This is the best book about html and css I've found. It's very readable.
+
+## Nick Briz's [class materials for Net Art && Cultures](http://netart.rocks/syllabus#details)
+
+These materials are great. They offer a broad scope of info, from net culture to how the web works to css and javascript instruction.
+
+I especially love the "reading watching and listening notes."
+
+## [Don't Fear The Internet](http://www.dontfeartheinternet.com/)
+
+If you like learning from videos (sorry!) this is a great series about html, css, and web development in general aimed at non-web-designers.
