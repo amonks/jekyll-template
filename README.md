@@ -29,18 +29,22 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
 
 1. Sign up for github
 2. fork this repository: your site will be online at http://[your-github-name].github.io/jekyll-template
-3. rename it
+3. rename it. You'll also have to change the `baseurl` in [`_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml)
 4. start editing
 
 Now I'll start to explain how it works.
 
 ## Github Pages
 
+[**github pages documentation**](https://pages.github.com/)
+
 Github has a free product called GitHub Pages. Here's what it does:
 
 If you have a github repository with a branch called 'gh-pages', it runs Jekyll on the contents of that branch, and then puts the output online at http://[your-github-name].github.io/[your-repo-name]. This one's at http://amonks.github.io/jekyll-template.
 
 ## Jekyll
+
+[**jekyll documentation**](https://jekyllrb.com/docs/home/)
 
 Jekyll looks at a folder like [this one](https://github.com/amonks/jekyll-template), and turns it into a website like [this one](http://amonks.github.io/jekyll-template).
 
@@ -56,11 +60,15 @@ I'll get into 'frontmatter', Markdown, Liquid, and Sass later.
 
 ### collections
 
-Here, rather than using the default collection, `posts`, I've [defined three collections in `_config.yml`](#), `articles`, `pages`, and `media`.
+[**jekyll collectionsdocumentation**](https://jekyllrb.com/docs/collections/)
+
+Here, rather than using the default collection, `posts`, I've [defined three collections in `_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml), `articles`, `pages`, and `media`.
 
 If you put files in a collection, you can turn each file in that collection folder into a webpage, and make a list on your website somewhere with links to all the pages in the collection
 
 ### frontmatter
+
+[**jekyll frontmatter documentation**](https://jekyllrb.com/docs/frontmatter/)
 
 Look at the files in the `_articles` folder. Each one starts with a block of YAML or JSON between sets of three dashes, like this:
 
@@ -72,7 +80,7 @@ title: article title
 
 that's called frontmatter. It's metadata about that page/file.
 
-I've defined default frontmatter for each collection in [`_config.yml`](#).
+I've defined default frontmatter for each collection in [`_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml).
 
 - `title` is something I made up, that I use in the post template.
 - `permalink` is built in. It determines the final url of the page.
@@ -80,7 +88,9 @@ I've defined default frontmatter for each collection in [`_config.yml`](#).
 
 There's more on permalinks on [the Permalinks page in the Jekyll docs](https://jekyllrb.com/docs/permalinks/)
 
-### templates
+### templates (liquid)
+
+[**liquid documentation**](https://shopify.github.io/liquid/)
 
 Jekyll uses a templating system called Liquid.
 
@@ -111,7 +121,7 @@ Let's look at
 {% include head.html %}
 ```
 
-That's a liquid tag called `include`. It means "put whatever's in [`_includes/head.html`](#) here".
+That's a liquid tag called `include`. It means "put whatever's in [`_includes/head.html`](https://github.com/amonks/jekyll-template/blob/gh-pages/_includes/head.html) here".
 
 ```liquid
 {% include article.html article=page %}
@@ -140,6 +150,8 @@ when we said `article=page`, it made the current page available to this include 
 `date: "$F"` is a "liquid filter".
 
 ### markdown
+
+[**markdown documentation**](https://daringfireball.net/projects/markdown/syntax)
 
 Markdown is a language for writing prose (articles or blog posts or stories or whatever, not like html structure so much) that turns into html. Here's an example:
 
@@ -173,11 +185,13 @@ look like:</p>
 </ul>
 ```
 
-### sass
+### css (sass)
+
+[**the sass documentation**](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
 Markdown is a language that turns into html, sass is a language that turns into css.
 
-Check out [`style.sass`](#). It starts with three dashes, so jekyll processes it. Since it's a `.scss` file, that means it runs it through sass.
+Check out [`style.sass`](https://github.com/amonks/jekyll-template/blob/gh-pages/style.scss). It starts with three dashes, so jekyll processes it. Since it's a `.scss` file, that means it runs it through sass.
 
 `.scss` is a version of sass that looks like css. `.sass` is a version of sass that doesn't. I like `.scss`.
 
@@ -189,7 +203,9 @@ The file uses two sass features, `@import`, and `@extend`.
 
 #### tachyons
 
-[`tachyons`](http://tachyons.io/docs/) is a big css file that includes classes for most of the possible css rules.
+[**tachyons documentation**](http://tachyons.io/docs/) 
+
+tachyons is a big css file that includes classes for most of the possible css rules.
 
 The tachyons approach is to design in your html, rather than your css.
 
@@ -237,9 +253,11 @@ The easiest way to find out what styles are being applied to something on your p
 
 ### data
 
+[**jekyll data documentation**](https://jekyllrb.com/docs/datafiles/)
+
 `_data` is a special folder.
 
-Check out [`_data/meta.yml`](#). The values defined here are available in templates within `site.data.meta`. For example, in `_includes/header.html`, I use `{{ site.data.meta.title }}`. 
+Check out [`_data/meta.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_data/meta.yml). The values defined here are available in templates within `site.data.meta`. For example, in `_includes/header.html`, I use `{{ site.data.meta.title }}`. 
 
 ### javascript
 
@@ -247,6 +265,7 @@ You'll notice an include called [`_includes/scripts.html`](https://github.com/am
 
 #### turbolinks
 
+[**turbolinks documentation**](https://github.com/turbolinks/turbolinks)
 turbolinks.js is the only script I've included in the template. It makes links within your website feel like they load faster by downloading the page and replacing only the parts that changed rather than doing a full page load.
 
 ## moving on from here
@@ -274,4 +293,10 @@ You don't have to use disqus, but static sites that fetch dynamic content on the
 the approach I'm using for media is a good one. There's an include called `_includes/media.html` that delegates to other media includes based on a `type` passed in. Right now it supports youtube, vimeo, and images, but you could easily add three.js, processing, carousels with multiple media, or whatever.
 
 On my own website, posts can specify an array of media in their frontmatter, the post layout calls the media include, and the media include can choose the appropriate include for the media type. It's easy to add to the system, and the layout and old posts don't need to change when I add new media types, or new features like an "aspect-ratio" argument on videos.
+
+### custom domain
+
+you can set a custom domain for a github-pages website. You'll have to change the baseurl in [`_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml), you'll have to point your domain name to github's servers, and you'll have to add a CNAME file.
+
+There's documentation about the process on [github's documentation website](https://help.github.com/articles/using-a-custom-domain-with-github-pages/).
 
