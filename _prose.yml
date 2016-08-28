@@ -30,7 +30,7 @@ prose:
           label: "title"
       - name: "type"
         field:
-          element: "multiselect"
+          element: "select"
           label: "type"
           placeholder: "Media Type"
           options:
