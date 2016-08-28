@@ -8,6 +8,8 @@ Hello! This is a demo website for a jekyll template.
 
 You can find more info [over here](https://github.com/amonks/jekyll-template)
 
+* * *
+
 Celiac single-origin coffee sartorial placeat, heirloom in typewriter letterpress aesthetic kitsch. Hella letterpress photo booth wolf pickled. Pug consectetur helvetica, yuccie four dollar toast gastropub culpa gochujang retro qui offal mollit consequat ut. Offal hammock duis, lo-fi est consequat literally chia. Pug selvage knausgaard stumptown meggings. Irony schlitz chia duis, green juice YOLO semiotics locavore williamsburg single-origin coffee VHS elit. Single-origin coffee id ex VHS tofu proident.
 
 1. this
