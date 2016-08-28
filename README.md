@@ -12,34 +12,33 @@ You might use prose.io as a sort of cms.
 
 ## Contents
 
-- [JEKYLL TEMPLATE](#jekyll-template)
-    - [Getting Started](#getting-started)
-    - [Github Pages](#github-pages)
-    - [Jekyll](#jekyll)
-        - [collections](#collections)
-        - [frontmatter](#frontmatter)
-        - [templates (liquid)](#templates-liquid)
-        - [markdown](#markdown)
-    - [An h2 header](#an-h2-header)
-        - [css (sass)](#css-sass)
-            - [tachyons](#tachyons)
-        - [data](#data)
-        - [javascript](#javascript)
-            - [turbolinks](#turbolinks)
-    - [prose.io](#proseio)
-    - [moving on from here](#moving-on-from-here)
-        - [comments and dynamic content](#comments-and-dynamic-content)
-        - [more media types](#more-media-types)
-        - [custom domain](#custom-domain)
+- [Getting Started](#getting-started)
+- [Github Pages](#github-pages)
+- [Jekyll](#jekyll)
+    - [collections](#collections)
+    - [frontmatter](#frontmatter)
+    - [templates (liquid)](#templates-liquid)
+    - [markdown](#markdown)
+    - [css (sass)](#css-sass)
+        - [tachyons](#tachyons)
+            - [tricks](#tricks)
+    - [data](#data)
+    - [javascript](#javascript)
+        - [turbolinks](#turbolinks)
+- [prose.io](#proseio)
+- [moving on from here](#moving-on-from-here)
+    - [comments and dynamic content](#comments-and-dynamic-content)
+    - [more media types](#more-media-types)
+    - [custom domain](#custom-domain)
 - [Appendix A: _What are all these files?_](#appendix-a-what-are-all-these-files)
 - [Appendix B: _Hold up! You're moving too fast!_](#appendix-b-hold-up-youre-moving-too-fast)
     - [John Ducket's book ["HTML&CSS"](http://www.htmlandcssbook.com/)](#john-duckets-book-htmlcsshttpwwwhtmlandcssbookcom)
     - [Nick Briz's [class materials for Net Art && Cultures](http://netart.rocks/syllabus#details)](#nick-brizs-class-materials-for-net-art-cultureshttpnetartrockssyllabusdetails)
-    - [Jessica Hische & Russ Maschmeyer's Don't Fear The Internet videos](http://www.dontfeartheinternet.com/)](#dont-fear-the-internethttpwwwdontfeartheinternetcom)
+    - [Jessica Hische & Russ Maschmeyer's [Don't Fear The Internet](http://www.dontfeartheinternet.com/) videos](#jessica-hische-russ-maschmeyers-dont-fear-the-internethttpwwwdontfeartheinternetcom-videos)
 
 <!-- end toc 4 -->
 
-## Getting Started
+# Getting Started
 
 1. Sign up for github
 2. fork this repository: your site will be online at http://[your-github-name].github.io/jekyll-template
@@ -50,7 +49,7 @@ Your website probably won't be the same as this template, but by reading through
 
 Now I'll start to explain how it works.
 
-## Github Pages
+# Github Pages
 
 [**github pages documentation**](https://pages.github.com/)
 
@@ -58,7 +57,7 @@ Github has a free product called GitHub Pages. Here's what it does:
 
 If you have a github repository with a branch called 'gh-pages', it runs Jekyll on the contents of that branch, and then puts the output online at http://[your-github-name].github.io/[your-repo-name]. This one's at http://amonks.github.io/jekyll-template.
 
-## Jekyll
+# Jekyll
 
 [**jekyll documentation**](https://jekyllrb.com/docs/home/)
 
@@ -74,7 +73,7 @@ If a file _does_ start with three dashes, the frontmatter is removed, it's run t
 
 I'll get into 'frontmatter', Markdown, Liquid, and Sass later.
 
-### collections
+## collections
 
 [**jekyll collectionsdocumentation**](https://jekyllrb.com/docs/collections/)
 
@@ -82,7 +81,7 @@ Here, rather than using the default collection, `posts`, I've [defined three col
 
 If you put files in a collection, you can turn each file in that collection folder into a webpage, and make a list on your website somewhere with links to all the pages in the collection
 
-### frontmatter
+## frontmatter
 
 [**jekyll frontmatter documentation**](https://jekyllrb.com/docs/frontmatter/)
 
@@ -104,7 +103,7 @@ I've defined default frontmatter for each collection in [`_config.yml`](https://
 
 There's more on permalinks on [the Permalinks page in the Jekyll docs](https://jekyllrb.com/docs/permalinks/)
 
-### templates (liquid)
+## templates (liquid)
 
 [**liquid documentation**](https://shopify.github.io/liquid/)
 
@@ -165,7 +164,7 @@ when we said `article=page`, it made the current page available to this include 
 
 `date: "$F"` is a "liquid filter".
 
-### markdown
+## markdown
 
 [**markdown documentation**](https://daringfireball.net/projects/markdown/syntax)
 
@@ -201,7 +200,7 @@ look like:</p>
 </ul>
 ```
 
-### css (sass)
+## css (sass)
 
 [**the sass documentation**](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
@@ -217,7 +216,7 @@ The file uses two sass features, `@import`, and `@extend`.
 
 `@extend` is kinda funky. It means "all the sass rules that these other things have, this thing should also have".
 
-#### tachyons
+### tachyons
 
 [**tachyons documentation**](http://tachyons.io/docs/) 
 
@@ -259,7 +258,7 @@ and then use it like this:
 
 An advantage is that you always know, when you're looking at your html, exactly what css is being applied. You don't have to remember "oh right I already defined an `.email` class with green text when I was working on the footer".
 
-##### tricks
+#### tricks
 
 The easiest way to look up a tachyon class if you have the class name and you want to know what css it applies is to command-f in `_sass/_tachyons.scss`. 
 
@@ -267,7 +266,7 @@ The easiest way to look up a tachyon class if you know what css you want to appl
 
 The easiest way to find out what styles are being applied to something on your page and where they're coming from is to right click on it in your browser and select "inspect element" or "inspect".
 
-### data
+## data
 
 [**jekyll data documentation**](https://jekyllrb.com/docs/datafiles/)
 
@@ -275,16 +274,16 @@ The easiest way to find out what styles are being applied to something on your p
 
 Check out [`_data/meta.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_data/meta.yml). The values defined here are available in templates within `site.data.meta`. For example, in `_includes/header.html`, I use `{{ site.data.meta.title }}`. 
 
-### javascript
+## javascript
 
 You'll notice an include called [`_includes/scripts.html`](https://github.com/amonks/jekyll-template/blob/gh-pages/_includes/scripts.html) inserted before the end of the <body> tag in each layout. That's where you should put your javascript.
 
-#### turbolinks
+### turbolinks
 
 [**turbolinks documentation**](https://github.com/turbolinks/turbolinks)
 turbolinks.js is the only script I've included in the template. It makes links within your website feel like they load faster by downloading the page and replacing only the parts that changed rather than doing a full page load.
 
-## prose.io
+# prose.io
 
 [**prose.io documentation**](https://github.com/prose/prose/wiki/Getting-Started)
 
@@ -300,7 +299,7 @@ Here's a screenshot:
 
 I find it a lot easier to use than editing files in github, and it's extra helpful if you have multiple authors who don't want to have to know about code stuff.
 
-## moving on from here
+# moving on from here
 
 Your website probably isn't about `articles` and `media`. Or maybe it is. In any case, you'll want to customize it up, add your own jawns. What have you.
 
@@ -308,7 +307,7 @@ You'll probably at least want to switch up the categories and the site metadata.
 
 Here are some things you might want to add:
 
-### comments and dynamic content
+## comments and dynamic content
 
 often, sites keep track of comments in a database.
 
@@ -320,13 +319,13 @@ You don't have to use disqus, but static sites that fetch dynamic content on the
 
 [firebase](https://firebase.google.com/pricing/) is database-and-api-as-a-service option from google with a generous free plan that can host any type of data you feel like, comments or otherwise. They provide a javascript library so you can easily reade and update your data from a website, but you'll have to deal with presenting that data on your page as html yourself.
 
-### more media types
+## more media types
 
 the approach I'm using for media is a good one. There's an include called `_includes/media.html` that delegates to other media includes based on a `type` passed in. Right now it supports youtube, vimeo, and images, but you could easily add three.js, processing, carousels with multiple media, or whatever.
 
 On my own website, posts can specify an array of media in their frontmatter, the post layout calls the media include, and the media include can choose the appropriate include for the media type. It's easy to add to the system, and the layout and old posts don't need to change when I add new media types, or new features like an "aspect-ratio" argument on videos.
 
-### custom domain
+## custom domain
 
 you can set a custom domain for a github-pages website. You'll have to change the baseurl in [`_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml), you'll have to point your domain name to github's servers, and you'll have to add a CNAME file.
 
