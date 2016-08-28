@@ -6,6 +6,7 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
 
 ## Contents
 
+- [Getting Started](#getting-started)
 - [Github Pages](#github-pages)
 - [Jekyll](#jekyll)
     - [collections](#collections)
@@ -16,8 +17,22 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
         - [tachyons](#tachyons)
             - [tricks](#tricks)
     - [data](#data)
+    - [javascript](#javascript)
+        - [turbolinks](#turbolinks)
+- [moving on from here](#moving-on-from-here)
+    - [comments and dynamic content](#comments-and-dynamic-content)
+    - [more media types](#more-media-types)
 
 <!-- end toc 4 -->
+
+## Getting Started
+
+1. Sign up for github
+2. fork this repository: your site will be online at http://[your-github-name].github.io/jekyll-template
+3. rename it
+4. start editing
+
+Now I'll start to explain how it works.
 
 ## Github Pages
 
@@ -225,4 +240,38 @@ The easiest way to find out what styles are being applied to something on your p
 `_data` is a special folder.
 
 Check out [`_data/meta.yml`](#). The values defined here are available in templates within `site.data.meta`. For example, in `_includes/header.html`, I use `{{ site.data.meta.title }}`. 
+
+### javascript
+
+You'll notice an include called [`_includes/scripts.html`](https://github.com/amonks/jekyll-template/blob/gh-pages/_includes/scripts.html) inserted before the end of the <body> tag in each layout. That's where you should put your javascript.
+
+#### turbolinks
+
+turbolinks.js is the only script I've included in the template. It makes links within your website feel like they load faster by downloading the page and replacing only the parts that changed rather than doing a full page load.
+
+## moving on from here
+
+Your website probably isn't about `articles` and `media`. Or maybe it is. In any case, you'll want to customize it up, add your own jawns. What have you.
+
+You'll probably at least want to switch up the categories and the site metadata.
+
+Here are some things you might want to add:
+
+### comments and dynamic content
+
+often, sites keep track of comments in a database.
+
+Jekyll generates "static sites", folders full of html files that are regenerated when you change the source files, _not_ every time someone visits the page.
+
+You can still use javascript within those static html pages to do cool stuff. [disqus](https://disqus.com/) is a comments system that works on static sites: it includes javascript that downloads all the comments on the fly, rather than hardcoding them into your page.
+
+You don't have to use disqus, but static sites that fetch dynamic content on the fly are a good approach. They're cheap to host, easy to cache, load quickly, and can use javascript and placeholders to gracefully handle errors downloading the dynamic content.
+
+[firebase](https://firebase.google.com/pricing/) is database-and-api-as-a-service option from google with a generous free plan that can host any type of data you feel like, comments or otherwise. They provide a javascript library so you can easily reade and update your data from a website, but you'll have to deal with presenting that data on your page as html yourself.
+
+### more media types
+
+the approach I'm using for media is a good one. There's an include called `_includes/media.html` that delegates to other media includes based on a `type` passed in. Right now it supports youtube, vimeo, and images, but you could easily add three.js, processing, carousels with multiple media, or whatever.
+
+On my own website, posts can specify an array of media in their frontmatter, the post layout calls the media include, and the media include can choose the appropriate include for the media type. It's easy to add to the system, and the layout and old posts don't need to change when I add new media types, or new features like an "aspect-ratio" argument on videos.
 
