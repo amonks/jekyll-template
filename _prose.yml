@@ -13,6 +13,15 @@ prose:
         field:
           element: "text"
           label: "title"
+    _pages:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "permalink"
     _media:
       - name: "title"
         field:
