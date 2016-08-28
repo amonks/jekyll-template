@@ -1,6 +1,7 @@
 ---
 title: My Website!
 layout: page
+permalink: '/'
 published: true
 ---
 Hello! This is a demo website for a jekyll template.
