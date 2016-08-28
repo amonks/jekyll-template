@@ -36,7 +36,9 @@ You might use prose.io as a sort of cms.
 1. Sign up for github
 2. fork this repository: your site will be online at http://[your-github-name].github.io/jekyll-template
 3. rename it. You'll also have to change the `baseurl` in [`_config.yml`](https://github.com/amonks/jekyll-template/blob/gh-pages/_config.yml)
-4. start editing
+4. visit [prose.io](https://prose.io) to get a feel for what editing it is like
+
+Your website probably won't be the same as this template, but by reading through the template you can hopefully get a better sense of how you ought to structure a website for your own needs. It's a starting point.
 
 Now I'll start to explain how it works.
 
