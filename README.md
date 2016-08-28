@@ -447,6 +447,6 @@ These materials are great. They offer a broad scope of info, from net culture to
 
 I especially love the "reading watching and listening notes."
 
-## [Don't Fear The Internet](http://www.dontfeartheinternet.com/)
+## Jessica Hische & Russ Maschmeyer's [Don't Fear The Internet](http://www.dontfeartheinternet.com/) videos
 
 If you like learning from videos (sorry!) this is a great series about html, css, and web development in general aimed at non-web-designers.
