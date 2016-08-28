@@ -6,7 +6,7 @@ You're gonna use Jekyll, which is a website generator, and you're gonna host it 
 
 You might use prose.io as a sort of cms.
 
-**This website is hosted (automatically) at https://amonks.github.io/jekyll-template **
+**This website is hosted (automatically) at **https://amonks.github.io/jekyll-template**
 
 ## Contents
 
