@@ -6,6 +6,7 @@ prose:
     - _sass
     - .gitignore
     - _config.yml
+    - _prose.yml
     - style.scss
   metadata:
     _articles:
