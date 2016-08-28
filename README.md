@@ -2,9 +2,11 @@
 
 You wanna make a website with more than one page.
 
-You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free.
+You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free, and which automatically runs Jekyll every time you make a change.
 
 You might use prose.io as a sort of cms.
+
+**This website is hosted (automatically) at https://amonks.github.io/jekyll-template **
 
 ## Contents
 
@@ -21,7 +23,7 @@ You might use prose.io as a sort of cms.
     - [data](#data)
     - [javascript](#javascript)
         - [turbolinks](#turbolinks)
-- [prose.io](#prose-io)
+- [prose.io](#proseio)
 - [moving on from here](#moving-on-from-here)
     - [comments and dynamic content](#comments-and-dynamic-content)
     - [more media types](#more-media-types)
