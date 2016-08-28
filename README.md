@@ -28,6 +28,7 @@ You might use prose.io as a sort of cms.
     - [comments and dynamic content](#comments-and-dynamic-content)
     - [more media types](#more-media-types)
     - [custom domain](#custom-domain)
+- [Appendix A: _What are all these files?_](#appendix-a-what-are-all-these-files)
 
 <!-- end toc 4 -->
 
