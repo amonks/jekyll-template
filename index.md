@@ -1,6 +1,6 @@
 ---
 title: My Website!
-layout: index
+layout: page
 ---
 Hello! This is my website.
 

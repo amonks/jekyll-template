@@ -1,6 +1,7 @@
-<ul>
+<ul class="list ph0">
   {% for article in include.articles %}
-    <li>
+    <li class="pb3 pb4-ns">
+      <time class="f6 gray" datetime="{{ article.date | date: "%F" }}">{{ article.date | date: "%F"}}</time>
       {% include link.html to=article %}
     </li>
   {% endfor %}

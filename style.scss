@@ -11,7 +11,11 @@
 ////////////////////////////////////
 
 .section {
-  @extend .mw7, .center, .pv3;
+  @extend .mw8, .center, .pv3, .pa3;
+}
+
+.w6 {
+  width: 24rem;
 }
 
 // taking cues from http://tachyons.io/docs/layout/max-widths/
@@ -22,26 +26,17 @@
 
 .mn-hi--60 { min-height: 60vh }
 
-/////////////////////////////////
-// rules for the whole website //
-/////////////////////////////////
+////////////////////////////////////
+// rules for the whole website    //
+// seriously, use these sparingly //
+////////////////////////////////////
 
 a {
   @extend .dim;
   color: inherit;
 }
 
-// markdown doesn't let us conveniently tag everything with a
-// class, so we'll make some general rules here and then wrap
-// any markdown output in our templates with a
-// <div class="markdown">
-
-.markdown {
-  p {
-    @extend .lh-copy, .measure;
-  }
-  ul {
-    @extend .list, .ph0;
-  }
+p {
+  @extend .lh-copy, .measure;
 }
 
