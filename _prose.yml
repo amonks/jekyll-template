@@ -2,6 +2,8 @@ prose:
   siteurl: 'http://amonks.github.io/jekyll-template'
   ignore:
     - _includes
+    - Gemfile
+    - Gemfile.lock
     - _layouts
     - _sass
     - .gitignore
