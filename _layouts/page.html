@@ -7,7 +7,7 @@
     </div>
     <div class="bg-white">
       <main class="section mn-hi--60">
-        {{ page.content }}
+        {{ page.content | markdownify }}
       </main>
     </div>
     {% include footer.html %}
