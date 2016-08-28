@@ -1,6 +1,6 @@
 # JEKYLL TEMPLATE
 
-You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts.
+You wanna make a website with more than one page. You (at least kinda) get html and css, but you're not sure how to structure a larger website and do things like automatically list all your posts. You should at least have vague familiarity with github. I hope to update this guide to cover the github stuff, but I haven't yet.
 
 You're gonna use Jekyll, which is a website generator, and you're gonna host it on Github Pages, which is free, and which automatically runs Jekyll every time you make a change.
 
