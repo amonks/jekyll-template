@@ -1,5 +1,12 @@
 prose:
   siteurl: 'http://amonks.github.io/jekyll-template'
+  ignore:
+    - _includes
+    - _layouts
+    - _sass
+    - .gitignore
+    - _config.yml
+    - style.scss
   metadata:
     _articles:
       - name: "title"
