@@ -35,7 +35,7 @@ You might use prose.io as a sort of cms.
 - [Appendix B: _Hold up! You're moving too fast!_](#appendix-b-hold-up-youre-moving-too-fast)
     - [John Ducket's book ["HTML&CSS"](http://www.htmlandcssbook.com/)](#john-duckets-book-htmlcsshttpwwwhtmlandcssbookcom)
     - [Nick Briz's [class materials for Net Art && Cultures](http://netart.rocks/syllabus#details)](#nick-brizs-class-materials-for-net-art-cultureshttpnetartrockssyllabusdetails)
-    - [[Don't Fear The Internet](http://www.dontfeartheinternet.com/)](#dont-fear-the-internethttpwwwdontfeartheinternetcom)
+    - [Jessica Hische & Russ Maschmeyer's Don't Fear The Internet videos](http://www.dontfeartheinternet.com/)](#dont-fear-the-internethttpwwwdontfeartheinternetcom)
 
 <!-- end toc 4 -->
 
