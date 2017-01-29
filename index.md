@@ -6,7 +6,7 @@ published: true
 ---
 Hello! This is a demo website for a jekyll template.
 
-You can find more info [over here](https://github.com/amonks/jekyll-template)
+You can find more info [over here](https://github.com/amonks/jekyll-template). I am making this change to force the website to rebuild.
 
 * * *
 
